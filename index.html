@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Sample team meeting minutes written in semantic HTML only."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer First Brainstorm - Meeting Minutes</title>
+    <link rel="icon" href="screenshots/example.png" type="image/png" />
+  </head>
+  <body id="top">
+    <header>
+      <h1>Pomodoro Timer First Brainstorm</h1>
+      <p><strong>Meeting Topic:</strong> Brainstorming and planning</p>
+      <p><strong>Date:</strong> April 14, 2026</p>
+      <nav>
+        <h2>Page Navigation</h2>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new-business">New Business</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#feedback-form">Feedback Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance List</h2>
+        <p>
+          Team members present for the meeting are listed below. <span>All core
+          members attended.</span>
+        </p>
+        <ul>
+          <li><strong>Felix1</strong> - facilitator</li>
+          <li><strong>Felix2</strong> - note taker</li>
+          <li><strong>Felix3</strong> - designer</li>
+          <li><strong>Felix4</strong> - developer</li>
+          <li><strong>Felix5</strong> - tester</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review the project goal for the Pomodoro Timer application.</li>
+          <li>Share initial ideas for features and layout.</li>
+          <li>Discuss team roles and short-term responsibilities.</li>
+          <li>Identify blockers and questions for the next meeting.</li>
+        </ol>
+
+        <div>
+          <h3>Quick Notes</h3>
+          <p>
+            The group agreed that the first version should focus on a
+            <b>simple timer</b>, a short task list, and clear controls. A more
+            accessible experience was marked as <strong>high priority</strong>.
+          </p>
+          <p>
+            Felix3 suggested an <i>easy-to-read interface</i>, and Felix4
+            emphasized that screen-reader support is <em>essential</em>.
+          </p>
+        </div>
+      </section>
+
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <p>
+          Items carried over from the previous discussion are summarized here.
+        </p>
+        <ul>
+          <li>Finalize the exact number of timer presets.</li>
+          <li>Choose whether task history should be saved locally.</li>
+          <li>
+            Confirm if notifications should be included in the first release.
+          </li>
+        </ul>
+      </section>
+
+      <section id="new-business">
+        <h2>New Business</h2>
+        <h3>Feature Ideas Raised During the Meeting</h3>
+        <ul>
+          <li>Allow users to label each work session.</li>
+          <li>Include a short break and long break mode.</li>
+          <li>Add a visible progress summary for completed sessions.</li>
+        </ul>
+
+        <h3>Miscellaneous Comments, Questions, and Concerns</h3>
+        <p>
+          Should the app open directly on the timer, or should it show a brief
+          welcome screen first?<br />
+          The team wants to keep the interface friendly for first-time users.
+        </p>
+
+        <details>
+          <summary>Discussion highlight</summary>
+          <p>
+            The team agreed that the first deliverable should be small and
+            dependable, even if that means postponing optional enhancements.
+          </p>
+        </details>
+      </section>
+
+      <section id="media">
+        <h2>Pictures and Recordings</h2>
+
+        <h3>Whiteboard Diagram</h3>
+        <img
+          src="screenshots/example.png"
+          alt="Example whiteboard sketch representing the team's planning diagram."
+          width="400"
+        />
+        <p>
+          The image above captures a rough planning sketch shared during the
+          meeting.
+        </p>
+
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="media/theoffice.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p>
+          The Office audio (placeholder).
+        </p>
+
+        <h3>Video Recording</h3>
+        <video controls width="400">
+          <source src="media/theoffice.mp4" type="video/mp4" />
+        </video>
+        <p>
+          The Office video (placeholder).
+        </p>
+      </section>
+
+      <section id="feedback-form">
+        <h2>Meeting Follow-Up Form</h2>
+        <form>
+          <fieldset>
+            <legend>Share your follow-up response</legend>
+
+            <p>
+              <label for="member-name">Name:</label><br />
+              <input
+                type="text"
+                id="member-name"
+                name="member-name"
+                list="team-members"
+              />
+            </p>
+
+            <datalist id="team-members">
+              <option value="Felix1"></option>
+              <option value="Felix2"></option>
+              <option value="Felix3"></option>
+              <option value="Felix4"></option>
+              <option value="Felix5"></option>
+            </datalist>
+
+            <p>
+              <label for="follow-up-date">Preferred follow-up date:</label><br />
+              <input type="date" id="follow-up-date" name="follow-up-date" />
+            </p>
+
+            <p>Which area would you like to help with?</p>
+            <input type="radio" id="design" name="role-choice" value="design" />
+            <label for="design">Design</label><br />
+            <input
+              type="radio"
+              id="development"
+              name="role-choice"
+              value="development"
+            />
+            <label for="development">Development</label><br />
+            <input type="radio" id="testing" name="role-choice" value="testing" />
+            <label for="testing">Testing</label>
+
+            <p>Which tasks are you comfortable taking on?</p>
+            <input
+              type="checkbox"
+              id="wireframes"
+              name="tasks"
+              value="wireframes"
+            />
+            <label for="wireframes">Wireframes</label><br />
+            <input type="checkbox" id="timer-logic" name="tasks" value="timer" />
+            <label for="timer-logic">Timer logic</label><br />
+            <input
+              type="checkbox"
+              id="test-plan"
+              name="tasks"
+              value="test-plan"
+            />
+            <label for="test-plan">Test plan</label>
+
+            <p>
+              <label for="topic-select">Pick the next meeting focus:</label><br />
+              <select id="topic-select" name="topic-select">
+                <option value="ui">User interface</option>
+                <option value="features">Core features</option>
+                <option value="testing">Testing strategy</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="comments">Additional comments:</label><br />
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                cols="40"
+              >I would like to discuss...</textarea>
+            </p>
+
+            <button type="submit">Submit Response</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Meeting minutes prepared for CSE 110 Lab 2.<br />
+        Contact the note taker through the team workspace if corrections are
+        needed.
+      </p>
+      <p><a href="#top">Return to top</a></p>
+    </footer>
+  </body>
+</html>
